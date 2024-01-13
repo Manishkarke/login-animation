@@ -1,0 +1,142 @@
+.form-component {
+  display: flex;
+  width: 50%;
+  aspect-ratio: 16/9;
+  margin: auto;
+  margin-top: 10%;
+  position: relative;
+  border-radius: 3em;
+  overflow: hidden;
+  background-color: var(--clr-white);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3),
+    0 2px 6px 2px rgba(164, 151, 151, 0.15);
+}
+
+.background {
+  width: 50%;
+  background-color: var(--clr-secondary);
+  position: absolute;
+  right: 0;
+  border-bottom-left-radius: 30%;
+  z-index: 0;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.left .background {
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 0;
+  right: 50%;
+}
+
+.form-box .form {
+  width: 50%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1em;
+  padding: 2.5em 1em;
+  transition: all 0.5s;
+}
+.form .form__header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.5rem;
+  text-transform: capitalize;
+  width: 100%;
+}
+
+.left .form-box__content {
+  animation: moveLeft 1s linear;
+}
+
+.form__header h1 {
+  font-size: 2.5rem;
+}
+
+.form-box .form___icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+.form-box .icons {
+  width: 40px;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+  aspect-ratio: 1/1;
+  display: grid;
+  place-content: center;
+}
+.form-component .form-box {
+  color: var(--clr-white);
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  z-index: 2;
+}
+
+.form-box__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  width: 50%;
+  height: 100%;
+  padding: 3em;
+  text-transform: capitalize;
+}
+
+.form-box__content h1 {
+  font-size: 2.5rem;
+}
+
+.btn {
+  font-size: 1.25rem;
+  padding: 0.5em 1.5em;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+}
+
+.secondary {
+  color: var(--clr-white);
+  border: 1px solid var(--clr-white);
+  background-color: transparent;
+}
+
+.primary {
+  color: var(--clr-white);
+  background-color: var(--clr-secondary);
+}
+
+.input-fields {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.inputfield,
+.inputfield input {
+  border: none;
+  background-color: var(--clr-background);
+  border-radius: 8px;
+  width: 100%;
+  height: 40px;
+}
+
+.inputfield input:focus {
+  border: none;
+  outline: none;
+}
+
+.inputfield input {
+  padding: 1em 0.5em;
+}
