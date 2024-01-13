@@ -7,7 +7,7 @@ export const FormComponent = () => {
   const [activateAnimation, setActivateAnimation] = useState(false);
 
   const formChangeHandler = () => {
-    setActivateAnimation(!activateAnimation)
+    setActivateAnimation(!activateAnimation);
     setFormChange(!formChange);
   };
   return (
@@ -77,6 +77,9 @@ export const FormComponent = () => {
             <p>or sign up using your email and password</p>
 
             <div className="input-fields">
+              <div className="inputfield">
+                <input type="text" />
+              </div>
               <div className="inputfield">
                 <input type="text" />
               </div>
